@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+
+:root {
+  /* Primary */
+  --Blue: hsl(246, 80%, 60%);
+  --LightRed-work: hsl(15, 100%, 70%);
+  --SoftBlue-play: hsl(195, 74%, 62%);
+  --LightRed-study: hsl(348, 100%, 68%);
+  --LimeGreen-exercise: hsl(145, 58%, 55%);
+  --Violet-social: hsl(264, 64%, 52%);
+  --SoftOrange-selfCare: hsl(43, 84%, 65%);
+  /* Neutral */
+  --VeryDarkBlue: hsl(226, 43%, 10%);
+  --DarkBlue: hsl(235, 46%, 20%);
+  --DesaturatedBlue: hsl(235, 45%, 61%);
+  --PaleBlue: hsl(236, 100%, 87%);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--VeryDarkBlue);
+}
+
+#Container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  border-radius: 1.2rem;
+  align-items: center;
+  height: 400px;
+  width: 800px;
+  gap: 1.2rem;
+  background-color: var(--VeryDarkBlue);
+}
+
+.Jeremy {
+  grid-row: 1 / 3;
+  background-color: var(--DarkBlue);
+  border-radius: 1.2rem;
+  height: 400px;
+}
+
+img {
+  border: 2px solid #fffbfa;
+  border-radius: 50%;
+  height: 67px;
+  width: 67px;
+  margin-bottom: 2rem;
+}
+
+.for {
+  font-size: 12px;
+  font-weight: 300;
+  color: white;
+}
+
+.Name {
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+}
+
+.Robson {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Blue);
+  border-radius: 1.2rem;
+  height: 280px;
+  padding: 1.5rem 1.2rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  border-radius: 1.2rem;
+}
+
+.container-Times {
+  color: var(--DesaturatedBlue);
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 0.5rem;
+  width: 0.1rem;
+  padding-bottom: 2rem;
+}
+
+.container-Times:hover {
+  color: white;
+}
+
+.container-icon {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.2rem;
+  align-items: flex-end;
+  height: 190px;
+}
+
+.icon {
+  display: flex;
+  align-items: flex-end;
+}
+
+.info-container {
+  border-radius: 1rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  z-index: 1;
+  margin-top: -1rem;
+  background-color: var(--DarkBlue);
+  height: 10rem;
+  width: 12rem;
+  cursor: pointer;
+  padding-left: 1.2rem;
+  padding-top: 0.3rem;
+}
+
+.Work {
+  background-color: var(--LightRed-work);
+}
+
+.Play {
+  background-color: var(--SoftBlue-play);
+}
+
+.Study {
+  background-color: var(--LightRed-study);
+}
+
+.Exercise {
+  background-color: var(--LimeGreen-exercise);
+}
+.Exercise .info-container {
+  margin-top: -0.7rem;
+}
+
+.Social {
+  background-color: var(--Violet-social);
+  overflow: hidden;
+}
+
+.Social svg {
+  margin-top: -0.7rem;
+  margin-right: 0.7rem;
+}
+
+.Social svg path {
+  transform: scale(0.9);
+}
+.Social .info-container {
+  margin-top: -2.3rem;
+}
+
+.SelfCare {
+  background-color: var(--SoftOrange-selfCare);
+}
+
+.title {
+  grid-column: 1 / 2;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ellips {
+  margin-left: 2.5rem;
+}
+
+.Time {
+  grid-column: 1 / 3;
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.Time-date {
+  color: var(--PaleBlue);
+  font-size: 10px;
+  width: 6rem;
+  margin-top: -2rem;
+}
+
+@media only screen and (max-width: 376px) {
+  #Container > * {
+    display: grid;
+    grid-column: 1;
+    grid-row: auto;
+    height: 100%;
+    width: 100%;
+    margin-left: 20%;
+  }
+
+  .Jeremy {
+    display: flex;
+    height: 200px;
+    width: 260px;
+  }
+  img {
+    grid-row: span 2;
+  }
+
+  .for {
+    font-size: 10px;
+    margin-top: 20px;
+  }
+
+  .Name {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .Robson {
+    display: grid;
+    grid-template-columns: 80px 150px;
+    width: 260px;
+    height: 110px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 88px;
+    border-radius: 1.2rem;
+  }
+  .container-icon {
+    height: 100px;
+  }
+
+  .container-icon .icon {
+    margin-left: 170px;
+  }
+
+  .info-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 30px 40px;
+    margin-top: -2rem;
+    height: 100px;
+    width: 260px;
+    padding-top: 20px;
+  }
+
+  .Time {
+    font-size: 25px;
+    width: 100px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .Time-date {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: 10px;
+    width: 6rem;
+    margin-top: 3px;
+  }
+
+  .title {
+    font-weight: 400;
+  }
+}

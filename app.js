@@ -19,7 +19,7 @@ while (password != "Kodehode") {
   password = prompt("What is the password?");
 }
 
-console.log("correct password!git");
+console.log("correct password!");
 
 const TimeTracker = document.querySelector("#Container");
 
@@ -68,7 +68,7 @@ const activities = [
   },
 ];
 
-// Function to update activity data based on the selected time frame
+// Function to update activity data
 const updateTimeTracker = (activ) => {
   const activity = document.querySelectorAll(".info-container");
   activity.forEach((t, i) => {
@@ -83,7 +83,7 @@ const updateTimeTracker = (activ) => {
   });
 };
 
-// Function to create the initial activity tracker container
+// Create the Function with the things
 const TimeTrackerContainer = () => {
   // Create Jeremy's DIV
   const jeremy = document.createElement("div");
@@ -160,7 +160,7 @@ const TimeTrackerContainer = () => {
     TimeTracker.append(iconDiv);
   });
 
-  // Set default view to "Daily"
+  // Set default view
   updateTimeTracker("weekly");
 };
 

@@ -69,7 +69,7 @@ const activities = [
 ];
 
 // Function to update activity data
-const updateTimeTracker = (activ) => {
+function updateTimeTracker(activ) {
   const activity = document.querySelectorAll(".info-container");
   activity.forEach((t, i) => {
     const activity = activities[i];
@@ -81,10 +81,10 @@ const updateTimeTracker = (activ) => {
         ? `Last Week - ${activity[activ].previous}hrs`
         : `Last Month - ${activity[activ].previous}hrs`;
   });
-};
+}
 
 // Create the Function with the things
-const TimeTrackerContainer = () => {
+function TimeTrackerContainer() {
   // Create Jeremy's DIV
   const jeremy = document.createElement("div");
   jeremy.classList.add("Jeremy");
@@ -162,7 +162,7 @@ const TimeTrackerContainer = () => {
 
   // Set default view
   updateTimeTracker("weekly");
-};
+}
 
 // Call the function
 TimeTrackerContainer();

@@ -19,7 +19,7 @@ while (password != "Kodehode") {
   password = prompt("What is the password?");
 }
 
-console.log("Prawidlowe haslo");
+console.log("correct password!");
 
 const TimeTracker = document.querySelector("#Container");
 

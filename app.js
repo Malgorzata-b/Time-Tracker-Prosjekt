@@ -161,7 +161,7 @@ const TimeTrackerContainer = () => {
   });
 
   // Set default view to "Daily"
-  updateTimeTracker("daily");
+  updateTimeTracker("weekly");
 };
 
 // Call the function

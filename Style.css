@@ -102,6 +102,9 @@ img {
   color: white;
 }
 
+.activ {
+  color: white;
+}
 .container-icon {
   display: flex;
   flex-direction: column;

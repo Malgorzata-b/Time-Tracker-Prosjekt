@@ -19,7 +19,7 @@ while (password != "Kodehode") {
   password = prompt("What is the password?");
 }
 
-console.log("correct password!");
+console.log("correct password!git");
 
 const TimeTracker = document.querySelector("#Container");
 
@@ -113,8 +113,12 @@ const TimeTrackerContainer = () => {
     button.classList.add("container-Times");
     button.textContent = `${btn[0].toLocaleUpperCase()}${btn.slice(1)}`;
     button.addEventListener("click", () => {
+      document.querySelectorAll(".container-Times").forEach((btn) => {
+        btn.classList.remove("activ");
+      });
+
+      button.classList.add("activ");
       updateTimeTracker(btn);
-      // button.style.color = "white";
     });
     buttons.append(button);
   });

@@ -18,6 +18,7 @@
   /* Neutral */
   --VeryDarkBlue: hsl(226, 43%, 10%);
   --DarkBlue: hsl(235, 46%, 20%);
+  --LightBlue: hsl(235, 46%, 50%);
   --DesaturatedBlue: hsl(235, 45%, 61%);
   --PaleBlue: hsl(236, 100%, 87%);
 }
@@ -105,6 +106,7 @@ img {
 .activ {
   color: white;
 }
+
 .container-icon {
   display: flex;
   flex-direction: column;
@@ -132,6 +134,10 @@ img {
   cursor: pointer;
   padding-left: 1.2rem;
   padding-top: 0.3rem;
+}
+
+.info-container:hover {
+  background-color: var(--LightBlue);
 }
 
 .Work {
